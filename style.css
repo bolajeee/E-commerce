@@ -362,7 +362,10 @@ footer a:hover{
     text-decoration: underline;
 }
 
-
+/* cart page  */
+#cart-page-header{
+    background: url(https://images.pexels.com/photos/1020372/pexels-photo-1020372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) top/cover no-repeat;
+}
 
 
 /* media queary */
