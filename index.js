@@ -18,7 +18,6 @@ function resetFilterBtns(){
 }
 
 
-
 const wrapper = document.querySelector('.wrapper')
 const LoginLink = document.querySelector('.login-link')
 const registerationLink = document.querySelector('.register-link')
@@ -30,3 +29,20 @@ registerationLink.addEventListener('click',() => {
 LoginLink.addEventListener('click', () => {
   wrapper.classList.remove('active')
 })
+
+
+var mainImg = document.getElementById('main-img')
+var smallImg = document.getElementsByClassName('small-img')
+
+smallImg.onClick = function(){
+  mainImg.src === smallImg[0].src;
+}
+smallImg[1].onClick = function(){
+  mainImg.src = smallImg[1].src;
+}
+smallImg[2].onClick = function () {
+  mainImg.src = smallImg[2].src;
+};
+smallImg[3].onClick = function () {
+  mainImg.src = smallImg[3].src;
+};

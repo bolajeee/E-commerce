@@ -364,9 +364,35 @@ footer a:hover{
 
 /* cart page  */
 #cart-page-header{
-    background: url(https://images.pexels.com/photos/1020372/pexels-photo-1020372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) top/cover no-repeat;
+    background: url(https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80) top/cover no-repeat;
+    height: 100vh;
 }
 
+/* pagination */
+.scroller{
+    border-radius: 5px;
+}
+
+.single-pro-img img{
+    width: 442px;
+    height: auto;
+    cursor: pointer;
+}
+
+.small-img-group img{
+    width: 100px;
+    height: auto;
+}
+.small-img{
+    cursor: pointer;
+}
+
+.single-pro-dets{
+    width: 50%;
+}
+.single-pro-dets .amount{
+    width: 40px;
+}
 
 /* media queary */
 @media(min-width: 992px) {
@@ -390,6 +416,15 @@ footer a:hover{
         width: 55%;
         margin: 10% 22.5%;
     }
+        .single-pro-img{
+            display: inline-flex;
+        }
+        .small-img-group{
+            flex-direction: column;
+        }
+        .single-pro-dets{
+            width: 80%;
+        }
 }
 
 @media(max-width:760px){
