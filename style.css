@@ -394,6 +394,67 @@ footer a:hover{
     width: 40px;
 }
 
+/* cart page  */
+
+.cart-items .images{
+    flex-direction: column;
+    justify-content: center;
+}
+.cart-items .images img{
+    width: 70px;
+    margin: 15px 7px;
+}
+
+.cart-items .product-name{
+        flex-direction: column;
+}
+.cart-items .product-name span{
+        width: 100;
+        padding: 40px 7px;
+        margin: 15px 0;
+        text-transform: capitalize;
+        font-weight: 600;
+}
+
+.cart-items .unit-price{
+        flex-direction: column;
+  
+}
+.cart-items .unit-price h3{
+            width: 100;
+                padding: 40px 7px;
+                margin: 10px 0;
+                text-transform: capitalize;
+                font-weight: 600;
+}
+
+.cart-items .total{
+    flex-direction: column;
+
+}
+.cart-items .total h3{
+        width: 100;
+        padding: 40px 7px;
+        margin: 10px 0;
+        text-transform: capitalize;
+        font-weight: 600;
+}
+
+.cart-items .cancel{
+    flex-direction: column;
+}
+
+.cart-items .cancel i{
+            width: 100;
+                padding: 40px 7px;
+                margin: 17px 0;
+                text-transform: capitalize;
+                font-weight: 600;
+    cursor: pointer;
+}
+
+
+
 /* media queary */
 @media(min-width: 992px) {
     .nav-item {

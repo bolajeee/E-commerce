@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+      <!-- for css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- for bootstarp -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- for fontawesome -->
+  <script src="https://kit.fontawesome.com/5d2547f812.js" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+<body>
+ <!-- navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+        <img src="images/label.png" alt="site-icon">
+        <span class="text-uppercase fw-lighter">Munis World</span>
+      </a>
+
+      <div class="order-lg-2 nav-btns">
+        <!-- <button type="button" class="btn position-relative">
+          <a href="checkout.html"><i class="fa fa-shopping-cart"></i></a>
+          <span class="position-absolute top-0 start-100 translate-middle badge bg-btn-color">5</span>
+        </button> -->
+
+        <button type="button" class="btn position-relative">
+          <i class="fa fa-heart"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge bg-btn-color">2</span>
+        </button>
+
+        <button type="button" class="btn position-relative">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <!-- <button class="navbar-toggler border-0" type="button" data-bs-toggle='collapse' data-bs-target='#navMenu'>
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+
+      <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item ">
+            <a href="index.html" class="nav-link text-dark text-uppercase px-2 py-2">Home</a>
+          </li><span class="text-primary-color fw-bold py-2">/ CART</span >
+        </ul>
+      </div>
+
+      <div class="login-signup order-lg-3 bg-btn-color">
+        <span><a href="login.html" class="fw-bold text-decoration-none">Log In / Sign Up</a></span>
+      </div>
+    </div>
+  </nav>
+
+<!-- header  -->
+<header id="cart-page-header">
+</header>
+
+<main class="my-5">
+ 
+<div class="container">
+
+       <div class="d-flex justify-content-between cart-item-title">
+            <h2 class="text-uppercase">image</h2>
+             <h2 class="text-uppercase">Product Name</h2>
+               <h2>Unit Price</h2>
+                    <h2>Total</h2>
+                       <h2>cancel</h2>
+        </div>
+
+    <div class="cart-items d-flex justify-content-between">
+
+    <div class="images d-flex ">         
+        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="">
+       <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="">
+       <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="">
+    </div>
+
+    <div class="product-name d-flex align-items-center ">       
+        <span>Product Name</span>
+        <span>Product Name</span>
+        <span>Product Name</span>
+    </div>
+
+    <div class="unit-price d-flex text-center mx-5">     
+         <h3>$125</h3>
+         <h3>$125</h3>
+          <h3>$125</h3>
+    </div>
+
+    <div class="total d-flex text-center mx-4">
+        <h3>$125</h3>
+        <h3>$125</h3>
+        <h3>$125</h3>
+    </div>
+
+    <div class="cancel d-flex text-center">
+          <i class="fa-solid fa-xmark mx-4"></i>
+            <i class="fa-solid fa-xmark mx-4"></i>
+              <i class="fa-solid fa-xmark mx-4"></i>
+    </div>
+
+    </div>
+
+    <button class="btn my-5">Place your order</button>
+
+</div>
+
+<!-- newsletter -->
+<section id="newsletter" class="py-5">
+  <div class="container">
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <div class="title text-center pt-3 pb-5">
+        <h2 class="position-relative d-inline-block mt-4">Newsletter Subscription</h2>
+      </div>
+
+      <p class="text-center text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis quia error! Ratione nisi totam eos consequuntur laudantium, eaque alias autem voluptate nesciunt architecto delectus deleniti, veniam velit a voluptates.</p>
+      <div class="input-group mb-3 mt-3">
+        <input type="text" class="form-control" placeholder="Enter Your E-mail ...">
+        <button class="btn bg-btn-color" type="submit">Subscription</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+
+<!-- footer -->
+<footer class="bg-dark py-5">
+  <div class="container">
+    <div class="row text-white g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <a href="index.html" class="text-uppercase brand text-white text-decoration-none fw-medium">Munis World</a>
+        <p class="text-white fw-light mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sapiente laboriosam nobis reiciendis provident labore tenetur illum delectus temporibus dolores quo adipisci nemo at soluta explicabo. Nemo illum dignissimos inventore.</p>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <h5 class="fw-medium">Links</h5>
+        <ul class="list-unstyled">
+          <li class="my-3">
+            <a href="#" class="text-white text-decoration-none">
+              <i class="fas fa-chevron-right"> Home</i>
+            </a>
+          </li>
+          <li class="my-3">
+            <a href="#" class="text-white text-decoration-none">
+              <i class="fas fa-chevron-right"> Collection</i>
+            </a>
+          </li>
+          <li class="my-3">
+            <a href="#" class="text-white text-decoration-none">
+              <i class="fas fa-chevron-right"> Blog</i>
+            </a>
+          </li>
+          <li class="my-3">
+            <a href="#" class="text-white text-decoration-none">
+              <i class="fas fa-chevron-right"> About Us</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <h5 class="fw-medium mb-3">Contact Us</h5>
+        <div class="d-flex justify-content-start align-items-start my-2 ">
+          <span class='me-3'>
+            <i class="fas fa-map-marked-alt"></i>
+          </span>
+          <span class="fw-light">
+             No 16 McNiel Road, YAba Lagos State, Nigeria.
+          </span>
+        </div>
+
+          <div class="d-flex justify-content-start align-items-start my-2 ">
+          <span class='me-3'>
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="fw-light">
+           MunisWorld@gmail.com
+          </span>
+        </div>
+
+          <div class="d-flex justify-content-start align-items-start my-2">
+          <span class='me-3'>
+            <i class="fas fa-phone"></i>
+          </span>
+          <span class="fw-light">
+            +234-8037041918
+          </span>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+          <h5 class="fw-medium mb-3">Follow Us</h5>
+          <div class="d-flex">
+            <ul class="list-unstyled d-flex">
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-4 me-4">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-4 me-4">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-4 me-4">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-4 me-4">
+                  <i class="fab fa-pinterest"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <p class="end pt-5 fw-lighter d-flex justify-content-center">&copy;CopyRight by Ibrahim</p>
+  
+</footer>
+
+
+  <!-- jqueary -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!-- isotope js  -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <!-- js file -->
+  <script src="index.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+</html>
