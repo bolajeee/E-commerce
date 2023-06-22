@@ -396,6 +396,12 @@ footer a:hover{
 }
 
 /* cart page  */
+.cart-item-title{
+    background-color: #162938;
+    color: white;
+    width: 100;
+    padding: 25px 30px;
+}
 
 .cart-items{
     flex-direction: column;
