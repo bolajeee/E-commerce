@@ -64,6 +64,7 @@ body{
     text-decoration: none;
     color: #fff;
 }
+.badge
 
 /* header */
 #header{
@@ -396,62 +397,16 @@ footer a:hover{
 
 /* cart page  */
 
-.cart-items .images{
+.cart-items{
     flex-direction: column;
-    justify-content: center;
+    margin: 0;
 }
-.cart-items .images img{
-    width: 70px;
-    margin: 15px 7px;
-}
-
-.cart-items .product-name{
-        flex-direction: column;
-}
-.cart-items .product-name span{
-        width: 100;
-        padding: 40px 7px;
-        margin: 15px 0;
-        text-transform: capitalize;
-        font-weight: 600;
+.cart-items img{
+    width: 100px;
+    margin: 15px 0px;
 }
 
-.cart-items .unit-price{
-        flex-direction: column;
-  
-}
-.cart-items .unit-price h3{
-            width: 100;
-                padding: 40px 7px;
-                margin: 10px 0;
-                text-transform: capitalize;
-                font-weight: 600;
-}
 
-.cart-items .total{
-    flex-direction: column;
-
-}
-.cart-items .total h3{
-        width: 100;
-        padding: 40px 7px;
-        margin: 10px 0;
-        text-transform: capitalize;
-        font-weight: 600;
-}
-
-.cart-items .cancel{
-    flex-direction: column;
-}
-
-.cart-items .cancel i{
-            width: 100;
-                padding: 40px 7px;
-                margin: 17px 0;
-                text-transform: capitalize;
-                font-weight: 600;
-    cursor: pointer;
-}
 
 
 
