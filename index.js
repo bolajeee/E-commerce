@@ -18,24 +18,24 @@ function resetFilterBtns(){
 }
 
 
-const wrapper = document.querySelector('.wrapper')
-const LoginLink = document.querySelector('.login-link')
-const registerationLink = document.querySelector('.register-link')
+// const wrapper = document.querySelector('.wrapper')
+// const LoginLink = document.querySelector('.login-link')
+// const registerationLink = document.querySelector('.register-link')
 
-registerationLink.addEventListener('click',() => {
-  wrapper.classList.add('active')
-})
+// registerationLink.addEventListener('click',() => {
+//   wrapper.classList.add('active')
+// })
 
-LoginLink.addEventListener('click', () => {
-  wrapper.classList.remove('active')
-})
+// LoginLink.addEventListener('click', () => {
+//   wrapper.classList.remove('active')
+// })
 
 
-var mainImg = document.getElementById('main-img')
+var mainImg = document.getElementById('main-img');
 var smallImg = document.getElementsByClassName('small-img')
 
 smallImg.onClick = function(){
-  mainImg.src === smallImg[0].src;
+  mainImg.getAttribute('src') = smallImg[0].getAttribute('src');
 }
 smallImg[1].onClick = function(){
   mainImg.src = smallImg[1].src;
@@ -46,3 +46,36 @@ smallImg[2].onClick = function () {
 smallImg[3].onClick = function () {
   mainImg.src = smallImg[3].src;
 };
+
+
+const addToCartItem = document.getElementsByClassName('best');
+const itemName = document.getElementsByClassName("itemName");
+const itemPrice = document.getElementsByClassName('itemPrice');
+// const itemImage = document.getElementsByClassName('itemImage').getAttribute('src');
+
+// Sample item data
+  var items = [
+  { name: itemName , price: itemPrice },
+];
+
+
+// Function to generate cart item elements
+function generateCartItem(item) {
+  var cartItem = document.createElement("div");
+  cartItem.innerHTML = item.name + '$' + item.price;
+  return cartItem;
+}
+
+// Function to display cart items on the page
+function displayCartItems() {
+  var cartItemsDiv = document.getElementById("cartItem");
+  cartItemsDiv.innerHTML = ""; // Clear existing items
+  
+  items.forEach(function(item) {
+    var cartItem = generateCartItem(item);
+    cartItemsDiv.appendChild(cartItem);
+  });
+}
+
+// Call the displayCartItems function to initially populate the cart page
+displayCartItems();
