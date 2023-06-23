@@ -38,44 +38,47 @@ smallImg.onClick = function(){
   mainImg.getAttribute('src') = smallImg[0].getAttribute('src');
 }
 smallImg[1].onClick = function(){
-  mainImg.src = smallImg[1].src;
+  mainImg.getAttribute('src') = smallImg[1].getAttribute('src');
 }
 smallImg[2].onClick = function () {
-  mainImg.src = smallImg[2].src;
+  mainImg.getAttribute('src') = smallImg[2].srcgetAttribute('src');
 };
 smallImg[3].onClick = function () {
-  mainImg.src = smallImg[3].src;
+  mainImg.getAttribute('src') = smallImg[3].getAttribute('src');
 };
 
 
-const addToCartItem = document.getElementsByClassName('best');
-const itemName = document.getElementsByClassName("itemName");
-const itemPrice = document.getElementsByClassName('itemPrice');
+const addToCartItem = document.getElementsByClassName('example');
+const itemNameElements = document.getElementsByClassName("itemName");
+const itemName = [...itemNameElements].map(element => element.textContent);
+
+const itemPriceElements = document.getElementsByClassName("itemPrice");
+const itemPrice = [...itemPriceElements].map(element => element.textContent);
+
 // const itemImage = document.getElementsByClassName('itemImage').getAttribute('src');
 
-// Sample item data
-  var items = [
-  { name: itemName , price: itemPrice },
+// Sample array of items
+var items = [
+  {
+    name : itemName , price : itemPrice
+  }
 ];
 
+// Function to display items on the cart page
+function displayItems() {
+  var cartItems = document.getElementById('cart-items');
 
-// Function to generate cart item elements
-function generateCartItem(item) {
-  var cartItem = document.createElement("div");
-  cartItem.innerHTML = item.name + '$' + item.price;
-  return cartItem;
+  // Clear existing content
+  cartItems.innerHTML = '';
+
+  // Loop through items array and create HTML elements for each item
+  for (var i = 0; i < items.length; i++) {
+    var item = items[i];
+    var itemElement = document.createElement('div');
+    itemElement.textContent = item.name +' '+ item.price;
+    cartItems.appendChild(itemElement);
+  }
 }
 
-// Function to display cart items on the page
-function displayCartItems() {
-  var cartItemsDiv = document.getElementById("cartItem");
-  cartItemsDiv.innerHTML = ""; // Clear existing items
-  
-  items.forEach(function(item) {
-    var cartItem = generateCartItem(item);
-    cartItemsDiv.appendChild(cartItem);
-  });
-}
-
-// Call the displayCartItems function to initially populate the cart page
-displayCartItems();
+// Call the displayItems function to initially populate the cart page
+addToCartItem.addEventListener('click',displayItems)
