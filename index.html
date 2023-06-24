@@ -25,35 +25,15 @@
 
 <body>
   <!-- navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top m-2 ">
     <div class="container">
       <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
         <img src="images/label.png" alt="site-icon">
         <span class="text-uppercase fw-lighter">Munis World</span>
       </a>
 
-      <div class="order-lg-2 nav-btns">
-        <button type="button" class="btn position-relative">
-          <a href="cart.html"><i class="fa fa-shopping-cart text-decoration-none"></i></a>
-          <span class="position-absolute top-0 start-100 translate-middle badge bg-btn-color">5</span>
-        </button>
-
-        <!-- <button type="button" class="btn position-relative">
-          <i class="fa fa-heart"></i>
-          <span class="position-absolute top-0 start-100 translate-middle badge bg-btn-color">2</span>
-        </button> -->
-
-        <button type="button" class="btn position-relative">
-          <i class="fa fa-search"></i>
-        </button>
-      </div>
-
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle='collapse' data-bs-target='#navMenu'>
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse order-lg-1" id="navMenu">
-        <ul class="navbar-nav mx-auto text-center">
+      <div class="collapse navbar-collapse order-lg-1 justify-content-end d-flex" id="navMenu">
+        <ul class="navbar-nav  text-end">
           <li class="nav-item">
             <a href="#header" class="nav-link text-dark text-uppercase px-2 py-2">Home</a>
           </li>
@@ -63,9 +43,9 @@
           <li class="nav-item">
             <a href="#specials" class="nav-link text-dark text-uppercase px-2 py-2">Specials</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="#blogs" class="nav-link text-dark text-uppercase px-2 py-2">Blogs</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="#about" class="nav-link text-dark text-uppercase px-2 py-2">About Us</a>
           </li>
@@ -76,30 +56,37 @@
         </ul>
       </div>
 
-      <div class="login-signup order-lg-3 bg-btn-color">
+
+ <button class="navbar-toggler border-0" type="button" data-bs-toggle='collapse' data-bs-target='#navMenu'>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- <div class="login-signup order-lg-3 bg-btn-color">
         <span><a href="login.html" class="fw-bold text-decoration-none">Log In / Sign Up</a></span>
-      </div>
+      </div> -->
     </div>
   </nav>
 
   <!-- header  -->
-  <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top:104px ;">
+  <header id="header" class="vh-100 carousel slide header" data-bs-ride="carousel" style="padding-top:104px ;">
     <div class="container d-flex h-100 align-items-center carousel-inner">
      
-      <div class="text-center carousel-item active">
+      <div class="text-left carousel-item mx-4 active">
         <h2 class=" text-capitalize text-white">Best Collection</h2>
         <h1 class="text-uppercase py-2 fw-bold text-white">New Arrivals</h1>
-        <a href="#" class="btn mt-3 text-uppercase">Shop now</a>
+        <h3 class="text-white">Our style make you feel right at home</h3>
+        <a href="#collection" class="btn mt-3 text-uppercase">Shop now</a>
       </div>
 
-      <div class="text-center carousel-item">
+      <div class="text-left carousel-item mx-4">
         <h2 class=" text-capitalize text-white">Best Prices</h2>
         <h1 class="text-uppercase py-2 fw-bold text-white">New Season</h1>
-        <a href="#" class="btn mt-3 text-uppercase">Buy now</a>
+        <h3 class="text-white">Our style make you feel right at home</h3>
+        <a href="#collection" class="btn mt-3 text-uppercase">Buy now</a>
       </div>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+    <button class="carousel-control-prev text-black" type="button" data-bs-target="#header" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </button>
 
@@ -110,7 +97,7 @@
 
   <main>
     <!-- collection  -->
-  <section id="collection" class="py-5">
+  <section id="collection">
     <div class="container">
       <div class="title text-center">
         <h2 class="position-relative d-inline-block b-l-2px">New Collection</h2>
@@ -285,7 +272,7 @@
   </section>
 
   <!-- special products -->
-  <section id="specials" class="py-5">
+  <section id="specials">
     <div class="container ">
       <div class="title text-center py-5 ">
         <h2 class="position-relative d-inline-block">Special Selections</h2>
@@ -297,58 +284,50 @@
         <div class="container carousel-inner">
 
         <div class="col-md-6 col-lg-4 col-xl-3 p-2 carousel-item special-items active">  
-          <div class="special-img position-relative overflow-hidden"><a href="checkout.html">
+          <div class="special-img position-relative overflow-hidden">
+            <a href="checkout.html">
             <img class="w-100" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-          </a>  <span class="position-absolute d-flex align-items-center justify-content-center text-primary-color fs-4">
-               <i class="fas fa-heart"></i>
-              </span>
+          </a> 
           </div>
           <div class="text-center">
             <p class="text-capitalize mt-3 mb-1">Yellow track suit</p>
             <span class="fw-bold d-block ">$45.00</span>
-            <a href="#" class="btn mt-3">Add to cart</a>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 p-2 carousel-item special-items active">  
-          <div class="special-img position-relative overflow-hidden"><a href="checkout.html">
+          <div class="special-img position-relative overflow-hidden">
+            <a href="checkout.html">
             <img class="w-100" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" >
-            <span class="position-absolute d-flex align-items-center justify-content-center text-primary-color fs-4">
-               <i class="fas fa-heart"></i>
-         </a>     </span>
+         </a>     
           </div>
           <div class="text-center">
             <p class="text-capitalize mt-3 mb-1">Yellow track suit</p>
             <span class="fw-bold d-block ">$45.00</span>
-            <a href="#" class="btn mt-3">Add to cart</a>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 p-2 carousel-item special-items">  
           <div class="special-img position-relative overflow-hidden"><a href="checkout.html">
             <img class="w-100" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" >
-            <span class="position-absolute d-flex align-items-center justify-content-center text-primary-color fs-4">
-               <i class="fas fa-heart"></i>
-         </a>     </span>
+        
+         </a>     
           </div>
           <div class="text-center">
             <p class="text-capitalize mt-3 mb-1">Yellow track suit</p>
             <span class="fw-bold d-block ">$45.00</span>
-            <a href="#" class="btn mt-3">Add to cart</a>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 p-2 carousel-item special-items">  
           <div class="special-img position-relative overflow-hidden"><a href="checkout.html">
             <img class="w-100" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-            <span class="position-absolute d-flex align-items-center justify-content-center text-primary-color fs-4">
-               <i class="fas fa-heart"></i>
-          </a>    </span>
+          
+          </a>   
           </div>
           <div class="text-center">
             <p class="text-capitalize mt-3 mb-1">Yellow track suit</p>
             <span class="fw-bold d-block ">$45.00</span>
-            <a href="#" class="btn mt-3">Add to cart</a>
           </div>
         </div>
 
@@ -362,56 +341,42 @@
         <div class="col-md-6 col-lg-4 col-xl-3 p-2 carousel-item special-items active">  
           <div class="special-img position-relative overflow-hidden">
             <img class="w-100" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-            <span class="position-absolute d-flex align-items-center justify-content-center text-primary-color fs-4">
-               <i class="fas fa-heart"></i>
-              </span>
           </div>
           <div class="text-center">
             <p class="text-capitalize mt-3 mb-1">Yellow track suit</p>
             <span class="fw-bold d-block ">$45.00</span>
-            <a href="#" class="btn mt-3">Add to cart</a>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 p-2 carousel-item special-items active">  
           <div class="special-img position-relative overflow-hidden">
             <img class="w-100" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" >
-            <span class="position-absolute d-flex align-items-center justify-content-center text-primary-color fs-4">
-               <i class="fas fa-heart"></i>
-              </span>
+        
           </div>
           <div class="text-center">
             <p class="text-capitalize mt-3 mb-1">Yellow track suit</p>
             <span class="fw-bold d-block ">$45.00</span>
-            <a href="#" class="btn mt-3">Add to cart</a>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 p-2 carousel-item special-items">  
           <div class="special-img position-relative overflow-hidden">
             <img class="w-100" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" >
-            <span class="position-absolute d-flex align-items-center justify-content-center text-primary-color fs-4">
-               <i class="fas fa-heart"></i>
-              </span>
+         
           </div>
           <div class="text-center">
             <p class="text-capitalize mt-3 mb-1">Yellow track suit</p>
             <span class="fw-bold d-block ">$45.00</span>
-            <a href="#" class="btn mt-3">Add to cart</a>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 p-2 carousel-item special-items">  
           <div class="special-img position-relative overflow-hidden">
             <img class="w-100" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-            <span class="position-absolute d-flex align-items-center justify-content-center text-primary-color fs-4">
-               <i class="fas fa-heart"></i>
-              </span>
           </div>
           <div class="text-center">
             <p class="text-capitalize mt-3 mb-1">Yellow track suit</p>
             <span class="fw-bold d-block ">$45.00</span>
-            <a href="#" class="btn mt-3">Add to cart</a>
           </div>
         </div>
 
@@ -424,20 +389,20 @@
   </section>
 
   <!-- Discounts  -->
-<section id="offers" class="py-5">
+<section id="offers">
   <div class="container">
     <div class="row d-flex align-items-center text-center justify-content-lg-start text-lg-start">
       <div class="offers-content">
         <span class="text-white">Discount up to 40%</span>
         <h2 class="mt-2 mb-4 text-white">Grand sale offer!</h2>
-        <a href="#" class="btn">Buy Now</a>
+        <a href="#footer" class="btn">Buy Now</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- blogs  -->
-<section id="blogs" class="py-5">
+<!-- <section id="blogs">
   <div class="container">
     <div class="title text-center py-5">
       <h2 class="position-relative d-inline-block">Our Latest Blog</h2>
@@ -484,10 +449,10 @@
       </div>
     
   </div>
-</section>
+</section> -->
 
 <!-- about us -->
-<section id="about" class="py-5">
+<section id="about">
   <div class="container">
     <div class="row gy-lg-5 align-items-center">
       <div class="col-lg-6 order-lg-1 text-center text-lg-start">
@@ -505,8 +470,8 @@
   </div>
 </section>
 
-<!-- Popular -->
-<section id="popular" class="py-5">
+<!-- Popular
+<section id="popular">
   <div class="container">
     <div class="title text-center pt-3 pb-5">
       <h2 class="position-relative d-inline-block mt-4">Popular Products</h2>
@@ -597,10 +562,10 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- newsletter -->
-<section id="newsletter" class="py-5">
+<!-- <section id="newsletter">
   <div class="container">
     <div class="d-flex flex-column align-items-center justify-content-center">
       <div class="title text-center pt-3 pb-5">
@@ -614,23 +579,23 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 </main>
 
 
 <!-- footer -->
-<footer class="bg-dark py-5">
+<footer class="bg-dark py-5" id="footer">
   <div class="container">
     <div class="row text-white g-4">
 
       <div class="col-md-6 col-lg-3">
-        <a href="index.html" class="text-uppercase brand text-white text-decoration-none fw-medium">Munis World</a>
-        <p class="text-white fw-light mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sapiente laboriosam nobis reiciendis provident labore tenetur illum delectus temporibus dolores quo adipisci nemo at soluta explicabo. Nemo illum dignissimos inventore.</p>
+        <a href="index.html" class="text-uppercase brand text-white text-decoration-none ">Munis World</a>
+        <p class="text-white  mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sapiente laboriosam nobis reiciendis provident labore tenetur illum delectus temporibus dolores quo adipisci nemo at soluta explicabo. Nemo illum dignissimos inventore.</p>
       </div>
 
       <div class="col-md-6 col-lg-3">
-        <h5 class="fw-medium">Links</h5>
+        <h5 class="">Links</h5>
         <ul class="list-unstyled">
           <li class="my-3">
             <a href="#" class="text-white text-decoration-none">
@@ -656,37 +621,37 @@
       </div>
 
       <div class="col-md-6 col-lg-3">
-        <h5 class="fw-medium mb-3">Contact Us</h5>
-        <div class="d-flex justify-content-start align-items-start my-2 ">
+        <h5 class=" mb-3">Contact Us</h5>
+        <div class="d-flex justify-content-start  my-2 ">
           <span class='me-3'>
             <i class="fas fa-map-marked-alt"></i>
           </span>
-          <span class="fw-light">
+          <span class="">
              No 16 McNiel Road, YAba Lagos State, Nigeria.
           </span>
         </div>
 
-          <div class="d-flex justify-content-start align-items-start my-2 ">
+          <div class="d-flex justify-content-start my-2 ">
           <span class='me-3'>
             <i class="fas fa-envelope"></i>
           </span>
-          <span class="fw-light">
+          <span class="">
            MunisWorld@gmail.com
           </span>
         </div>
 
-          <div class="d-flex justify-content-start align-items-start my-2">
+          <div class="d-flex justify-content-start my-2">
           <span class='me-3'>
             <i class="fas fa-phone"></i>
           </span>
-          <span class="fw-light">
+          <span class="">
             +234-8037041918
           </span>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-3">
-          <h5 class="fw-medium mb-3">Follow Us</h5>
+          <h5 class=" mb-3">Follow Us</h5>
           <div class="d-flex">
             <ul class="list-unstyled d-flex">
               <li>

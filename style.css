@@ -13,6 +13,10 @@ body{
     font-family: var(--sm-font);
 }
 
+section{
+    padding: 100px 0;
+}
+
 /*button*/
 .bg-btn-color{
     background-color: var(--pink)!important;
@@ -40,10 +44,12 @@ body{
 /* navbar */
 .navbar {
     box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
 }
 .navbar-brand img {
-    width: 120px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
 }
 .navbar-brand span{
     letter-spacing: 2px;
@@ -52,6 +58,7 @@ body{
 .nav-link:hover{
     color: var(--pink) !important;
 }
+
 .nav-item{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
@@ -68,6 +75,8 @@ body{
 
 /* header */
 #header{
+}
+.header{
     background: url(images/attire.jpg) top/cover no-repeat;
 }
 .carousel-inner h1{
@@ -77,6 +86,7 @@ body{
 .carousel-item .btn{
     border-color: gray;
 }
+
 
 /* title */
 .title h2::before{
@@ -123,18 +133,16 @@ body{
 }
 
 #specials1{
-    width: 35%;
-    /* margin-left: 30%; */
+    width: 25%;
     
 }
 #specials2{
-    width: 35%;
-    /* margin-left: 30%; */
+    width: 25%;
 }
 
 /* offers */
 #offers{
-    background: url(https://media.istockphoto.com/id/809817058/photo/girl-wearing-glasses-and-casual-clothes-posing.jpg?s=612x612&w=0&k=20&c=NzNojOhNR-mAfDQTkzasdlob3fYQKxvmfrSzt9ucnik=) center/cover no-repeat;
+    background: url(https://cdn.pixabay.com/photo/2016/09/12/17/03/fabric-1665202_1280.jpg) center/cover no-repeat;
 }
 #offers .row{
     min-height: 60vh;
@@ -366,7 +374,7 @@ footer a:hover{
 /* cart page  */
 #cart-page-header{
     background: url(https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80) top/cover no-repeat;
-    height: 100vh;
+    height: 70vh;
 }
 
 /* pagination */
