@@ -18,17 +18,7 @@ function resetFilterBtns(){
 }
 
 
-// const wrapper = document.querySelector('.wrapper')
-// const LoginLink = document.querySelector('.login-link')
-// const registerationLink = document.querySelector('.register-link')
 
-// registerationLink.addEventListener('click',() => {
-//   wrapper.classList.add('active')
-// })
-
-// LoginLink.addEventListener('click', () => {
-//   wrapper.classList.remove('active')
-// })
 
 
 var mainImg = document.getElementById('main-img');
