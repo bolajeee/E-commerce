@@ -16,6 +16,10 @@ body{
 section{
     padding: 100px 0;
 }
+header{
+    height: 100vh;
+    padding-top:104px;
+}
 
 /*button*/
 .bg-btn-color{
