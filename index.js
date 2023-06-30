@@ -17,58 +17,51 @@ function resetFilterBtns(){
     })
 }
 
+$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 50) {
+            $(".navbar").addClass("active");
+        } else {
+           $(".navbar").removeClass("active");
+        }
+    });
+});
+
+
+const sr = ScrollReveal({
+  distance: '65px',
+  duration: 2600,
+  delay: 450,
+  reset: true
+})
+
+const sr2 = ScrollReveal({
+  distance: '85px',
+  duration: 2600,
+  delay: 450,
+  reset: true
+})
+
+const sr3 = ScrollReveal({
+  distance: '90px',
+  duration: 2600,
+  delay: 450,
+  reset: true
+})
+
+sr.reveal('.carousel-item', { delay: 300, origin: 'top' })
+
+sr2.reveal('.title', { delay: 200, origin: 'top' })
+sr2.reveal('.about', { delay: 400, origin: 'right' })
+sr2.reveal('.collection-img', { delay: 400, origin: 'top' })
+sr2.reveal('.footer', { delay: 600, origin: 'bottom' })
+
+
+sr3.reveal('.filter-button-group', { delay: 400, origin: 'top' })
+sr3.reveal('.special-items', { delay: 300, origin: 'bottom' })
+sr3.reveal('.offers-content', { delay: 300, origin: 'bottom' })
 
 
 
 
-var mainImg = document.getElementById('main-img');
-var smallImg = document.getElementsByClassName('small-img')
 
-smallImg.onClick = function(){
-  mainImg.getAttribute('src') = smallImg[0].getAttribute('src');
-}
-smallImg[1].onClick = function(){
-  mainImg.getAttribute('src') = smallImg[1].getAttribute('src');
-}
-smallImg[2].onClick = function () {
-  mainImg.getAttribute('src') = smallImg[2].srcgetAttribute('src');
-};
-smallImg[3].onClick = function () {
-  mainImg.getAttribute('src') = smallImg[3].getAttribute('src');
-};
-
-
-const addToCartItem = document.getElementsByClassName('example');
-const itemNameElements = document.getElementsByClassName("itemName");
-const itemName = [...itemNameElements].map(element => element.textContent);
-
-const itemPriceElements = document.getElementsByClassName("itemPrice");
-const itemPrice = [...itemPriceElements].map(element => element.textContent);
-
-// const itemImage = document.getElementsByClassName('itemImage').getAttribute('src');
-
-// Sample array of items
-var items = [
-  {
-    name : itemName , price : itemPrice
-  }
-];
-
-// Function to display items on the cart page
-function displayItems() {
-  var cartItems = document.getElementById('cart-items');
-
-  // Clear existing content
-  cartItems.innerHTML = '';
-
-  // Loop through items array and create HTML elements for each item
-  for (var i = 0; i < items.length; i++) {
-    var item = items[i];
-    var itemElement = document.createElement('div');
-    itemElement.textContent = item.name +' '+ item.price;
-    cartItems.appendChild(itemElement);
-  }
-}
-
-// Call the displayItems function to initially populate the cart page
-addToCartItem.addEventListener('click',displayItems)

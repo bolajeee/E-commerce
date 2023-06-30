@@ -16,10 +16,7 @@ body{
 section{
     padding: 100px 0;
 }
-header{
-    height: 100vh;
-    padding-top:104px;
-}
+
 
 /*button*/
 .bg-btn-color{
@@ -47,10 +44,20 @@ header{
 
 /* navbar */
 .navbar {
-    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     width: 100;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent!important;
 }
 .navbar-brand img {
     width: 70px;
@@ -71,7 +78,10 @@ header{
 
 
 /* header */
-#header{
+header{
+    height: 100vh;
+    padding-top: 104px;
+    
 }
 .header{
     background: url(https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80) top/cover no-repeat;
