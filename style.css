@@ -47,17 +47,21 @@ section{
     display: flex;
     justify-content: space-between;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    z-index: 10000;
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    width: 100;
-    transition: all 0.2s ease-in-out;
-    background-color: transparent!important;
+    /*Opacity start*/
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.80;
+        -khtml-opacity: 0.8;
+        opacity: 0.8;
+        /*Opacity end*/
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* height: 150px; */
+        padding: 0;
+        margin: 0;
 }
 .navbar-brand img {
     width: 70px;
