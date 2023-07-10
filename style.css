@@ -1,45 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&family=Poppins:wght@300;400;500&display=swap'); 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&family=Poppins:wght@300;400;500&display=swap');
+
+* {
     list-style: none;
-        text-decoration: none;
+    text-decoration: none;
 }
-:root{
+
+:root {
     --lg-font: 'kaisei Tokumin', serif;
     --sm-font: 'poppins', sans-serif;
     --pink: #e53450;
 }
 
-body{
+body {
     font-family: var(--sm-font);
 }
 
-section{
+section {
     padding: 100px 0;
 }
 
 
 /*button*/
-.bg-btn-color{
-    background-color: var(--pink)!important;
+.bg-btn-color {
+    background-color: var(--pink) !important;
 }
 
-.btn:not(.nav-btns button){
+.btn:not(.nav-btns button) {
     background-color: white;
     color: black;
     padding: 10px 20px;
     border-radius: 25px;
     border: 1px solid gray;
 }
-.btn:not(.nav-btns button):hover{
+
+.btn:not(.nav-btns button):hover {
     background-color: #e53450;
-    border-color: white ;
+    border-color: white;
     transition: all .55s ease;
     color: white;
 }
 
 /* text color  */
-.text-primary-color{
-    color: var(--pink)!important;
+.text-primary-color {
+    color: var(--pink) !important;
 }
 
 /* navbar */
@@ -48,59 +51,65 @@ section{
     justify-content: space-between;
     position: fixed;
     /*Opacity start*/
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-        filter: alpha(opacity=80);
-        -moz-opacity: 0.80;
-        -khtml-opacity: 0.8;
-        opacity: 0.8;
-        /*Opacity end*/
-        color: white;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        /* height: 150px; */
-        padding: 0;
-        margin: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    /*Opacity end*/
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 150px; */
+    padding: 0;
+    margin: 0;
 }
+
 .navbar-brand img {
     width: 70px;
     height: 70px;
 }
-.navbar-brand span{
+
+.navbar-brand span {
     letter-spacing: 2px;
     font-family: var(--lg-font);
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: var(--pink) !important;
 }
 
-.nav-item{
+.nav-item {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 
 }
 
 
 /* header */
-header{
+header {
     height: 100vh;
     padding-top: 104px;
-    
+
 }
-.header{
+
+.header {
     background: url(https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80) top/cover no-repeat;
 }
-.carousel-inner h1{
+
+.carousel-inner h1 {
     font-size: 60px;
     font-family: var(--lg-font);
 }
-.carousel-item .btn{
+
+.carousel-item .btn {
     border-color: gray;
 }
 
 
 /* title */
-.title h2::before{
+.title h2::before {
     position: absolute;
     content: '';
     width: 4px;
@@ -112,15 +121,17 @@ header{
 }
 
 /*collection*/
-.active-filter-btn{
+.active-filter-btn {
     background-color: var(--pink) !important;
     color: white !important;
     border-color: var(--pink) !important;
 }
-.filter-button-group .btn:hover{
+
+.filter-button-group .btn:hover {
     color: #fff !important;
 }
-.collection-img span{
+
+.collection-img span {
     top: 20px;
     right: 20px;
     width: 40px;
@@ -129,95 +140,106 @@ header{
 }
 
 /* special */
-.special-img span{
+.special-img span {
     top: 20px;
     right: 20px;
 }
-.special-list .btn{
+
+.special-list .btn {
     padding: 8px 20px !important;
 }
-.special-img img{
+
+.special-img img {
     transition: all .3s ease;
 }
-.special-img:hover img{
+
+.special-img:hover img {
     transform: scale(1.2);
 }
 
-#specials1{
-    width: 25%;
-    
+#specials1 {
+    width: 35%;
+
 }
-#specials2{
-    width: 25%;
+
+#specials2 {
+    width: 35%;
 }
 
 /* offers */
-#offers{
+#offers {
     background: url(https://cdn.pixabay.com/photo/2016/09/12/17/03/fabric-1665202_1280.jpg) center/cover no-repeat;
+    height: 400px;
 }
-#offers .row{
-    min-height: 60vh;
-}
-.offers-content span{
+
+.offers-content span {
     font-size: 20px;
 }
-.offers-content h2{
+
+.offers-content h2 {
     font-size: 60px;
     font-family: var(--lg-font);
 }
-.offers-content .btn{
-    background-color: transparent!important;
+
+.offers-content .btn {
+    background-color: transparent !important;
 }
 
 
 
 /* about */
 
-#about{
+#about {
     background-color: rgba(179, 179, 179, 0.05);
 }
-.card img{
+
+.card img {
     height: 300px;
 }
 
 /* newsletter */
-#newsletter{
+#newsletter {
     background-color: rgba(179, 179, 179, 0.05);
 }
 
-#newsletter p{
+#newsletter p {
     max-width: 600px;
 }
-#newsletter .input-group{
+
+#newsletter .input-group {
     max-width: 500px;
 }
-#newsletter .form-control{
+
+#newsletter .form-control {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
-#newsletter .btn{
+
+#newsletter .btn {
     background-color: var(--pink);
     color: #fff;
     border-color: var(--pink);
 }
-#newsletter .btn:hover{
+
+#newsletter .btn:hover {
     background-color: #000;
     border-color: #000;
 }
 
 /* footer  */
-footer .brand{
+footer .brand {
     font-family: var(--lg-font);
     letter-spacing: 2px;
 }
 
-footer a{
+footer a {
     transition: color .3s ease;
 }
 
-footer a:hover{
-    color: var(--pink)!important;
+footer a:hover {
+    color: var(--pink) !important;
 }
+
 .end {
     color: white;
     font-size: 15px;
@@ -227,28 +249,30 @@ footer a:hover{
 
 
 /* pagination */
-.scroller{
+.scroller {
     border-radius: 5px;
 }
 
-.single-pro-img img{
+.single-pro-img img {
     width: 442px;
     height: auto;
     cursor: pointer;
 }
 
-.small-img-group img{
+.small-img-group img {
     width: 100px;
     height: auto;
 }
-.small-img{
+
+.small-img {
     cursor: pointer;
 }
 
-.single-pro-dets{
+.single-pro-dets {
     width: 50%;
 }
-.single-pro-dets .amount{
+
+.single-pro-dets .amount {
     width: 40px;
 }
 
@@ -257,28 +281,31 @@ footer a:hover{
 @media(min-width: 992px) {
     .nav-item {
         border-bottom: none;
-   
+
     }
 
     .collection-img img {
         height: 350px;
     }
 
-        .special-list img {
-            height: 400px;
-        }
+    .special-list img {
+        height: 400px;
+    }
 
-        
+
 }
-@media(max-width:992px){
- 
-        .single-pro-img{
-            display: inline-flex;
-        }
-        .small-img-group{
-            flex-direction: column;
-        }
-        .single-pro-dets{
-            width: 80%;
-        }
+
+@media(max-width:992px) {
+
+    .single-pro-img {
+        display: inline-flex;
+    }
+
+    .small-img-group {
+        flex-direction: column;
+    }
+
+    .single-pro-dets {
+        width: 80%;
+    }
 }
